@@ -11,10 +11,10 @@ function getFullResponseFromAPI(success) {
       }
     }, 2000);
   })
-    .catch(error => {
+    .catch((error => {
       console.error('Error in getFullResponseFromAPI:', error.message);
       throw error;
-    });
-  }
+    }));
+}
 
 export default getFullResponseFromAPI;
